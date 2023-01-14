@@ -1,14 +1,24 @@
 <template>
-  <div class="category_section">
-    <div class="container">
-        <router-link class="btn first" to="/add-category" > {{ $t('add_category') }}</router-link>
-    </div>
-  </div>
+    <section class="category_page">
+        <div class="container">
+            <router-link class="btn first" to="/add-category">
+          {{ $t("add_category") }}</router-link
+        >
+         <category-tabs />
+
+        </div>
+    </section>
+         
 </template>
 
 <script>
-export default {
+import categoryTabs from "@/components/category/categoryTabs.vue";
 
+export default {
+name:"category",
+components:{
+    categoryTabs
+}
 }
 </script>
 

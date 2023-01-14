@@ -54,7 +54,7 @@ export default {
 
 body {
   overflow-x: hidden;
-  direction: rtl;
+  direction: ltr;
 }
 
 ul {
@@ -361,6 +361,34 @@ img {
     line-height: 31.2px;
     text-align: center;
     padding-top: 1.5rem;
+  }
+}
+.cards{
+  justify-content: space-between;
+  width: 100%;
+  .card{
+    margin: 2% 0;
+    padding: 10px;
+    border-radius: 8px;
+    width: 30%;
+   img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+   
+   }
+   h2{
+    font-size: 1.1rem;
+    color: var(--color-text);
+    font-family: 'bold';
+    margin: 2% 0;
+   }
+   p{
+    font-size: .9rem;
+    color: var(--color-parg);
+    font-family: 'regular';
+    
+   }
   }
 }
 </style>

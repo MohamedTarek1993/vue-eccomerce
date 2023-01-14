@@ -38,6 +38,7 @@ const i18n = createI18n({
   messages: loadLocaleMessages(), // set locale messages
 });
 
+// const cors = require('cors');
 
 const app = createApp(App);
 // axios baseurl
@@ -46,4 +47,5 @@ app.config.globalProperties.axios=axios
 app.use(i18n);
 app.use(router);
 app.use(FlagIcon);
+// app.use(cors({ origin: true }));
 app.mount("#app");
