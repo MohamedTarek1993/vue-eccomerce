@@ -1,10 +1,15 @@
 <template>
-  test test
+  <top-gategory  />
 </template>
 
 <script>
-export default {
+import topGategory from "@/components/category/topGategory.vue";
 
+export default {
+name:"home",
+components:{
+  topGategory
+}
 }
 </script>
 
