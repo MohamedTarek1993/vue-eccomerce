@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 //import website
 import Home from "../view/home";
 import Products from "../view/products";
-import Product from "../view/product";
+import showProducts from "../view/product";
 
 import Category from "../view/category";
 import addCategory from "../view/category/addCategory";
@@ -31,10 +31,10 @@ const routes = [
 
       {
         path: "/products/:id",
-        name: "Product",
-        component: Product,
+        name: "showProducts",
+        component: showProducts,
         meta: {
-          title: "Product",
+          title: "showProducts",
         }
       },
 
