@@ -1,9 +1,21 @@
 import axios from "axios";
 
-// let id = {id: this.$route.params.id};
+// export const catData = () => {
+//     let id = window.location.pathname.split("/")[2] ;
+//      let product_id = {key:id}
+//     return axios.get("/product/" , product_id).then((response) => {
+//         //  console.log(response.data);
+//         return response;
+//     });
+// }
+
 export const catData = () => {
-    return axios.get("/product/").then((response) => {
-        //  console.log(response.data);
+    let id = window.location.pathname.split("/")[2] ;
+    // console.log(id)
+    //  let product_id = {key:id}
+    return axios.post("/product/update/"+id).then((response) => {
+          console.log(response.data);
         return response;
     });
 }
+

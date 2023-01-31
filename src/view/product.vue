@@ -2,10 +2,8 @@
   <div class="product_page">
     <div class="container">
         <div class="row">
-          <router-link :to="{name : 'showProduct'}" >
             <card-second :product="product" > </card-second>
 
-          </router-link>
         </div>
     </div>
   </div>
